@@ -84,7 +84,6 @@ function generateBombs() {
             for(let j = 0; j < matrix2[i].length; j += gameUnit) {
                 if(i === bombX && j === bombY && matrix2[i][j].bomb == false) {
                     matrix2[i][j].bomb = true;
-                    ctx.drawImage(bombImage, bombX, bombY, gameUnit, gameUnit);
                     generateNumbers(bombX, bombY);
                     ++nrBombs;
                     break;
